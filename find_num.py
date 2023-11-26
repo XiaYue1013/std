@@ -1,5 +1,5 @@
 def find_num():
-    rows = ["1467", "2367", "1357"]
+    rows = ["4567", "2367", "1357"]
     binary_num = ""
 
     for row in rows:

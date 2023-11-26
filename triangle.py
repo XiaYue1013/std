@@ -1,6 +1,12 @@
 def t(a, b, c):
     if a + b <= c or a + c <= b or b + c <= a:
         return "不是有效的三角形"
+        
+    longest = max(a, b, c)
+    if longest == a:
+        c, a = a, c
+    elif longest == b:
+        c, b = b, c
 
     if c**2 == a**2 + b**2:
         t_type = "直角三角形"
